@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartGhar Tuition - अजमेर में सर्वश्रेष्ठ होम ट्यूटर और स्टडी टिप्स</title>
+    <meta name="description" content="अजमेर में कक्षा 1 से 10 के लिए होम ट्यूटर, मॉडल पेपर, टाइम टेबल, बोर्ड परीक्षा में अच्छे नंबर लाने के तरीके और पिछले सालों के पेपर की जानकारी।">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Poppins', sans-serif; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+    <!-- Header / Navigation -->
+    <header class="bg-indigo-700 text-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <i class="fa-solid fa-graduation-cap text-2xl text-yellow-400"></i>
+                <span class="text-xl font-bold tracking-wide">SmartGhar Tuition</span>
+            </div>
+            <div class="flex items-center space-x-3">
+                <a href="#forms-section" class="hidden md:inline text-sm text-indigo-100 hover:text-white">रजिस्ट्रेशन</a>
+                <a href="#fee-calculator" class="hidden md:inline text-sm text-indigo-100 hover:text-white">फीस दरें</a>
+                <a href="#study-tips" class="hidden md:inline text-sm text-indigo-100 hover:text-white">स्टडी टिप्स</a>
+                <a href="#features" class="hidden md:inline text-sm text-indigo-100 hover:text-white">विशेषताएँ</a>
+                
+                <!-- Social Media Icons in Header (Only Logos) -->
+                <div class="hidden lg:flex items-center space-x-3 pl-2 border-l border-indigo-500">
+                    <a href="https://www.facebook.com/share/19VWedovpE/" target="_blank" class="text-indigo-100 hover:text-yellow-300 transition text-lg" title="Facebook">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="https://www.instagram.com/prakashsaini1806?stkn=MWZzcG1od2c0N2ExdQ==" target="_blank" class="text-indigo-100 hover:text-yellow-300 transition text-lg" title="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/prakash-saini-51b345335" target="_blank" class="text-indigo-100 hover:text-yellow-300 transition text-lg" title="LinkedIn">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </div>
+
+                <a href="tel:917665533892" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-full text-sm font-semibold flex items-center space-x-2 shadow">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>कॉल करें</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-indigo-800 to-purple-800 text-white py-16 px-4 text-center">
+        <div class="max-w-4xl mx-auto">
+            <span class="bg-indigo-600 text-yellow-300 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider mb-4 inline-block shadow">अजमेर का नं. 1 ट्यूशन प्लेटफॉर्म</span>
+            
+            <h1 class="text-3xl md:text-5xl font-bold mb-4 leading-tight">
+                SmartGhar Tuition <br>
+                <span class="text-yellow-300">अब आपके शहर अजमेर में वो भी फुल आकर्षक तरीके से!</span>
+            </h1>
+            
+            <p class="text-lg text-indigo-200 mb-6 max-w-2xl mx-auto">कक्षा 1 से 10 के बच्चों के लिए वैशाली नगर, पंचशील नगर, लोहाखान और पूरे अजमेर में लचीले समय (Flexible Timing) पर होम ट्यूटर बुक करें।</p>
+            
+            <div class="inline-block bg-yellow-400/20 border border-yellow-400 text-yellow-300 text-sm font-medium px-4 py-2 rounded-xl mb-8">
+                <i class="fa-solid fa-clock mr-2"></i> समय पूरी तरह आपके और ट्यूटर के तालमेल से तय होगा (Flexible Timing)!
+            </div>
+            
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="#forms-section" onclick="switchTab('parent')" class="bg-yellow-400 hover:bg-yellow-500 text-indigo-950 font-bold px-6 py-3 rounded-xl shadow-lg transition">ट्यूटर बुक करें</a>
+                <a href="#study-tips" class="bg-white/10 hover:bg-white/20 text-white border border-white/30 font-bold px-6 py-3 rounded-xl shadow-lg transition">स्टडी टिप्स और गाइड</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content & Forms Section (Moved Up Right After Hero) -->
+    <main id="forms-section" class="max-w-4xl mx-auto px-4 -mt-8 relative z-20 pb-8">
+        <div class="bg-white rounded-2xl shadow-xl overflow-hidden border border-slate-100 p-6 md:p-8">
+            <h2 class="text-2xl font-bold text-center text-indigo-900 mb-2">अपनी आवश्यकता दर्ज करें</h2>
+            <p class="text-center text-slate-500 text-sm mb-6">लचीले समय के साथ ट्यूटर बुक करने के लिए फॉर्म भरें।</p>
+
+            <!-- Tabs Navigation -->
+            <div class="flex border-b border-slate-200 mb-6">
+                <button onclick="switchTab('parent')" id="tab-parent" class="flex-1 py-3 text-center font-semibold text-indigo-600 border-b-2 border-indigo-600 focus:outline-none transition">
+                    अभिभावक / पेरेंट्स फॉर्म
+                </button>
+                <button onclick="switchTab('teacher')" id="tab-teacher" class="flex-1 py-3 text-center font-semibold text-slate-400 border-b-2 border-transparent focus:outline-none transition">
+                    शिक्षक / ट्यूटर रजिस्ट्रेशन
+                </button>
+            </div>
+
+            <!-- Parent Form Content -->
+            <div id="form-parent" class="space-y-4">
+                <div>
+                    <label class="block text-sm font-medium text-slate-700 mb-1">अभिभावक का नाम *</label>
+                    <input type="text" id="p-name" placeholder="अपना पूरा नाम लिखें" class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-indigo-500 outline-none">
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-sm font-medium text-slate-700 mb-1">कक्षा *</label>
+                        <select id="p-class" class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-indigo-500 outline-none">
+                            <option value="कक्षा 1 से 5 (₹150-200/hr)">कक्षा 1 से 5 (₹150-200/hr)</option>
+                            <option value="कक्षा 6 से 8 (₹200-300/hr)">कक्षा 6 से 8 (₹200-300/hr)</option>
+                            <option value="कक्षा 9 और 10 (₹250-400/hr)">कक्षा 9 और 10 (₹250-400/hr)</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-slate-700 mb-1">पसंदीदा समय (Flexible Timing) *</label>
+                        <input type="text" id="p-time" placeholder="जैसे: शाम 4 से 6 बजे" class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-indigo-500 outline-none">
+                    </div>
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-slate-700 mb-1">विषय *</label>
+                    <input type="text" id="p-subject" placeholder="जैसे: गणित, विज्ञान, सभी विषय" class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-indigo-500 outline-none">
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-slate-700 mb-1">अजमेर में आपका क्षेत्र / कॉलोनी *</label>
+                    <input type="text" id="p-location" placeholder="जैसे: वैशाली नगर, पंचशील नगर" class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-indigo-500 outline-none">
+                </div>
+                
+                <!-- Demo Class Checkbox Option -->
+                <div class="flex items-center space-x-2 pt-2">
+                    <input type="checkbox" id="p-demo" class="w-4 h-4 text-indigo-600 rounded focus:ring-indigo-500">
+                    <label for="p-demo" class="text-sm text-slate-700">क्या आपको पहले **फ्री डेमो क्लास** चाहिए?</label>
+                </div>
+
+                <button type="button" onclick="sendParentWhatsApp()" class="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-3 rounded-xl transition flex items-center justify-center space-x-2 shadow-lg">
+                    <i class="fa-brands fa-whatsapp text-xl"></i>
+                    <span>व्हाट्सएप पर जानकारी भेजें</span>
+                </button>
+            </div>
+
+            <!-- Teacher Form Content (Hidden by default) -->
+            <div id="form-teacher" class="space-y-4 hidden">
+                <div>
+                    <label class="block text-sm font-medium text-slate-700 mb-1">शिक्षक का नाम *</label>
+                    <input type="text" id="t-name" placeholder="अपना पूरा नाम लिखें" class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-indigo-500 outline-none">
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-sm font-medium text-slate-700 mb-1">योग्यता (Qualification) *</label>
+                        <input type="text" id="t-qualification" placeholder="जैसे: B.Sc, B.Ed, M.A" class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-indigo-500 outline-none">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-slate-700 mb-1">अनुभव *</label>
+                        <input type="text" id="t-experience" placeholder="जैसे: 2 साल" class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-indigo-500 outline-none">
+                    </div>
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-slate-700 mb-1">किन कक्षाओं को पढ़ा सकते हैं? *</label>
+                    <input type="text" id="t-classes" placeholder="जैसे: कक्षा 1 से 8 गणित" class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-indigo-500 outline-none">
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-slate-700 mb-1">पसंदीदा क्षेत्र (अजमेर) *</label>
+                    <input type="text" id="t-location" placeholder="जैसे: आनासागर, श्रीनगर रोड" class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-indigo-500 outline-none">
+                </div>
+                <button type="button" onclick="sendTeacherWhatsApp()" class="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-3 rounded-xl transition flex items-center justify-center space-x-2 shadow-lg">
+                    <i class="fa-brands fa-whatsapp text-xl"></i>
+                    <span>व्हाट्सएप पर रजिस्ट्रेशन भेजें</span>
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Fee Calculator Section (Hourly Rates) -->
+    <section id="fee-calculator" class="py-12 px-4 max-w-3xl mx-auto">
+        <div class="bg-white rounded-2xl shadow-xl border border-slate-100 p-6 md:p-8">
+            <div class="text-center mb-6">
+                <h2 class="text-2xl font-bold text-indigo-900">प्रति घंटा फीस संरचना (Hourly Fee Structure)</h2>
+                <p class="text-slate-500 text-sm mt-1">कक्षा के अनुसार स्पष्ट और किफायती प्रति घंटा दरें</p>
+            </div>
+            <div class="space-y-4">
+                <div>
+                    <label class="block text-sm font-medium text-slate-700 mb-1">कक्षा चुनें</label>
+                    <select id="calc-class" onchange="updateHourlyFee()" class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-indigo-500 outline-none">
+                        <option value="₹ 150 - ₹ 200 प्रति घंटा">कक्षा 1 से 5 (₹150 - ₹200 / घंटा)</option>
+                        <option value="₹ 200 - ₹ 300 प्रति घंटा">कक्षा 6 से 8 (₹200 - ₹300 / घंटा)</option>
+                        <option value="₹ 250 - ₹ 400 प्रति घंटा" selected>कक्षा 9 और 10 (₹250 - ₹400 / घंटा)</option>
+                    </select>
+                </div>
+                <div class="bg-indigo-50 border border-indigo-100 rounded-xl p-4 text-center mt-4">
+                    <span class="text-sm text-slate-600 block">निर्धारित प्रति घंटा फीस दर:</span>
+                    <span id="display-hourly-fee" class="text-2xl md:text-3xl font-bold text-indigo-700">₹ 250 - ₹ 400 प्रति घंटा</span>
+                </div>
+                <p class="text-xs text-slate-500 text-center mt-2">* समय पूरी तरह लचीला (Flexible) है, जिसे आप अपनी सुविधा से सेट कर सकते हैं।</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- New Study Tips & SEO Keywords Section (Model Paper, Time Table, Exam Tips) -->
+    <section id="study-tips" class="py-12 px-4 max-w-7xl mx-auto">
+        <div class="text-center mb-10">
+            <h2 class="text-2xl md:text-3xl font-bold text-indigo-900">छात्र मार्गदर्शिका: परीक्षा की तैयारी कैसे करें?</h2>
+            <p class="text-slate-500 text-sm mt-1">बोर्ड क्लास, टाइम मैनेजमेंट और अच्छे अंक प्राप्त करने के विशेष टिप्स</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
+                <div class="text-indigo-600 text-2xl mb-3"><i class="fa-solid fa-calendar-days"></i></div>
+                <h3 class="font-bold text-lg mb-2 text-indigo-900">परफेक्ट टाइम टेबल और टाइम मैनेजमेंट</h3>
+                <p class="text-slate-600 text-sm">रोजाना पढ़ाई का सही टाइम टेबल कैसे बनाएं? लेट नाइट तक पढ़ाई करने के सही तरीके और आलस भगाने के उपाय ताकि समय का सदुपयोग हो सके।</p>
+            </div>
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
+                <div class="text-indigo-600 text-2xl mb-3"><i class="fa-solid fa-book-open-reader"></i></div>
+                <h3 class="font-bold text-lg mb-2 text-indigo-900">मॉडल पेपर और पिछले सालों के पेपर</h3>
+                <p class="text-slate-600 text-sm">कक्षा 1 से 10 (विशेषकर बोर्ड क्लास) के छात्र पिछले सालों के प्रश्न पत्र और मॉडल पेपर हल करके परीक्षा का पैटर्न आसानी से समझ सकते हैं।</p>
+            </div>
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
+                <div class="text-indigo-600 text-2xl mb-3"><i class="fa-solid fa-award"></i></div>
+                <h3 class="font-bold text-lg mb-2 text-indigo-900">बोर्ड क्लास में टॉप कैसे करें?</h3>
+                <p class="text-slate-600 text-sm">परीक्षा में अच्छे नंबर कैसे लाएं, बोर्ड परीक्षा में पास होने के आसान तरीके और उत्तर लिखने की सही कला हमारे अनुभवी ट्यूटर्स द्वारा सिखाई जाती है।</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-12 px-4 max-w-7xl mx-auto bg-indigo-50/50 rounded-3xl my-6">
+        <div class="text-center mb-10">
+            <h2 class="text-2xl md:text-3xl font-bold text-indigo-900">हम क्यों खास हैं?</h2>
+            <p class="text-slate-500 text-sm mt-1">अजमेर के अभिभावकों का पहला भरोसा</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 text-center">
+                <div class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-full flex items-center justify-center mx-auto mb-4 text-xl">
+                    <i class="fa-solid fa-clock-rotate-left"></i>
+                </div>
+                <h3 class="font-bold text-lg mb-2 text-indigo-900">पूरी तरह लचीला समय</h3>
+                <p class="text-slate-600 text-sm">सुबह हो या शाम, छात्र की सुविधा के अनुसार ट्यूशन का समय तय करने की पूरी आज़ादी।</p>
+            </div>
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 text-center">
+                <div class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-full flex items-center justify-center mx-auto mb-4 text-xl">
+                    <i class="fa-solid fa-indian-rupee-sign"></i>
+                </div>
+                <h3 class="font-bold text-lg mb-2 text-indigo-900">किफायती प्रति घंटा फीस</h3>
+                <p class="text-slate-600 text-sm">कक्षा 1 से 10 के लिए बहुत ही उचित और स्पष्ट प्रति घंटा मानदेय दरें।</p>
+            </div>
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 text-center">
+                <div class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-full flex items-center justify-center mx-auto mb-4 text-xl">
+                    <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <h3 class="font-bold text-lg mb-2 text-indigo-900">घर पर पढ़ाई (अजमेर)</h3>
+                <p class="text-slate-600 text-sm">वैशाली नगर, पंचशील और लोहाखान में आपके घर पर व्यक्तिगत ट्यूशन क्लास।</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Media Connect Banner Section (Only Logos) -->
+    <section class="bg-indigo-50 py-8 px-4 border-y border-indigo-100">
+        <div class="max-w-4xl mx-auto text-center">
+            <h3 class="text-xl font-bold text-indigo-900 mb-2">हमारे सोशल मीडिया से जुड़ें</h3>
+            <p class="text-slate-600 text-sm mb-6">सिंगल क्लिक पर हमारे सोशल मीडिया प्रोफाइल्स पर पहुँचें:</p>
+            <div class="flex justify-center space-x-6">
+                <a href="https://www.facebook.com/share/19VWedovpE/" target="_blank" class="bg-blue-600 hover:bg-blue-700 text-white w-12 h-12 rounded-full flex items-center justify-center text-xl shadow-md transition transform hover:scale-110" title="Facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com/prakashsaini1806?stkn=MWZzcG1od2c0N2ExdQ==" target="_blank" class="bg-pink-600 hover:bg-pink-700 text-white w-12 h-12 rounded-full flex items-center justify-center text-xl shadow-md transition transform hover:scale-110" title="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/prakash-saini-51b345335" target="_blank" class="bg-sky-700 hover:bg-sky-800 text-white w-12 h-12 rounded-full flex items-center justify-center text-xl shadow-md transition transform hover:scale-110" title="LinkedIn">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-12 px-4 max-w-4xl mx-auto">
+        <div class="text-center mb-10">
+            <h2 class="text-2xl md:text-3xl font-bold text-indigo-900">अक्सर पूछे जाने वाले सवाल (FAQ)</h2>
+            <p class="text-slate-500 text-sm mt-1">आपके मन में आने वाले आम सवालों के जवाब</p>
+        </div>
+        <div class="space-y-4">
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100">
+                <h3 class="font-bold text-indigo-900 text-base mb-1">प्रश्न 1: क्या ट्यूशन का समय लचीला (Flexible) होता है?</h3>
+                <p class="text-slate-600 text-sm">हाँ! समय पूरी तरह से छात्र और ट्यूटर के आपसी तालमेल और सुविधा के अनुसार तय किया जाता है।</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100">
+                <h3 class="font-bold text-indigo-900 text-base mb-1">प्रश्न 2: क्या हमें पहले डेमो क्लास मिल सकती है?</h3>
+                <p class="text-slate-600 text-sm">बिल्कुल! आप फॉर्म भरते समय डेमो क्लास का विकल्प चुन सकते हैं।</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating Action Buttons -->
+    <div class="fixed bottom-6 right-6 z-50 flex flex-col space-y-3">
+        <!-- WhatsApp Floating Button -->
+        <a href="https://api.whatsapp.com/send?phone=917665533892&text=Hello%20SmartGharTuition,%20I%20want%20more%20information." target="_blank" class="bg-green-500 hover:bg-green-600 text-white w-14 h-14 rounded-full flex items-center justify-center text-2xl shadow-2xl transition transform hover:scale-110" title="WhatsApp पर चैट करें">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+        <!-- Call Floating Button -->
+        <a href="tel:917665533892" class="bg-indigo-600 hover:bg-indigo-700 text-white w-14 h-14 rounded-full flex items-center justify-center text-xl shadow-2xl transition transform hover:scale-110" title="तुरंत कॉल करें">
+            <i class="fa-solid fa-phone"></i>
+        </a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-white py-8 px-4 mt-12">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0 text-sm">
+            <p>&copy; 2026 SmartGhar Tuition Ajmer. सर्वाधिकार सुरक्षित।</p>
+            
+            <!-- Social Media Icons in Footer (Only Logos) -->
+            <div class="flex items-center space-x-4">
+                <a href="https://www.facebook.com/share/19VWedovpE/" target="_blank" class="text-indigo-300 hover:text-white transition text-lg" title="Facebook">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/prakashsaini1806?stkn=MWZzcG1od2c0N2ExdQ==" target="_blank" class="text-indigo-300 hover:text-white transition text-lg" title="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/prakash-saini-51b345335" target="_blank" class="text-indigo-300 hover:text-white transition text-lg" title="LinkedIn">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <span class="text-slate-600">|</span>
+                <span class="text-indigo-300">संपर्क: 7665533892</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        const ADMIN_PHONE = "917665533892";
+
+        function updateHourlyFee() {
+            const selectedFee = document.getElementById('calc-class').value;
+            document.getElementById('display-hourly-fee').innerText = selectedFee;
+        }
+
+        function switchTab(type) {
+            const tabParent = document.getElementById('tab-parent');
+            const tabTeacher = document.getElementById('tab-teacher');
+            const formParent = document.getElementById('form-parent');
+            const formTeacher = document.getElementById('form-teacher');
+
+            if(type === 'parent') {
+                tabParent.classList.add('border-indigo-600', 'text-indigo-600');
+                tabParent.classList.remove('border-transparent', 'text-slate-400');
+                tabTeacher.classList.remove('border-indigo-600', 'text-indigo-600');
+                tabTeacher.classList.add('border-transparent', 'text-slate-400');
+                formParent.classList.remove('hidden');
+                formTeacher.classList.add('hidden');
+            } else {
+                tabTeacher.classList.add('border-indigo-600', 'text-indigo-600');
+                tabTeacher.classList.remove('border-transparent', 'text-slate-400');
+                tabParent.classList.remove('border-indigo-600', 'text-indigo-600');
+                tabParent.classList.add('border-transparent', 'text-slate-400');
+                formTeacher.classList.remove('hidden');
+                formParent.classList.add('hidden');
+            }
+        }
+
+        function sendParentWhatsApp() {
+            const name = document.getElementById('p-name').value.trim();
+            const cls = document.getElementById('p-class').value;
+            const time = document.getElementById('p-time').value.trim();
+            const subj = document.getElementById('p-subject').value.trim();
+            const loc = document.getElementById('p-location').value.trim();
+            const demoChecked = document.getElementById('p-demo').checked;
+            const demoText = demoChecked ? "हाँ (फ्री डेमो चाहिए)" : "नहीं";
+
+            if(!name || !time || !subj || !loc) {
+                alert("कृपया सभी आवश्यक जानकारी (नाम, समय, विषय और क्षेत्र) भरें।");
+                return;
+            }
+
+            const text = `*SmartGhar Tuition - पेरेंट ट्यूटर पूछताछ*%0A%0A` +
+                         `*अभिभावक का नाम:* ${encodeURIComponent(name)}%0A` +
+                         `*कक्षा:* ${encodeURIComponent(cls)}%0A` +
+                         `*पसंदीदा समय (Flexible):* ${encodeURIComponent(time)}%0A` +
+                         `*विषय:* ${encodeURIComponent(subj)}%0A` +
+                         `*स्थान:* ${encodeURIComponent(loc)}%0A` +
+                         `*डेमो क्लास:* ${encodeURIComponent(demoText)}`;
+
+            window.location.href = `https://api.whatsapp.com/send?phone=${ADMIN_PHONE}&text=${text}`;
+        }
+
+        function sendTeacherWhatsApp() {
+            const name = document.getElementById('t-name').value.trim();
+            const qual = document.getElementById('t-qualification').value.trim();
+            const exp = document.getElementById('t-experience').value.trim();
+            const cls = document.getElementById('t-classes').value.trim();
+            const loc = document.getElementById('t-location').value.trim();
+
+            if(!name || !qual || !exp || !cls || !loc) {
+                alert("कृपया सभी आवश्यक जानकारी भरें।");
+                return;
+            }
+
+            const text = `*SmartGhar Tuition - शिक्षक रजिस्ट्रेशन*%0A%0A` +
+                         `*नाम:* ${encodeURIComponent(name)}%0A` +
+                         `*योग्यता:* ${encodeURIComponent(qual)}%0A` +
+                         `*अनुभव:* ${encodeURIComponent(exp)}%0A` +
+                         `*कक्षाएं:* ${encodeURIComponent(cls)}%0A` +
+                         `*पसंद का क्षेत्र:* ${encodeURIComponent(loc)}`;
+
+            window.location.href = `https://api.whatsapp.com/send?phone=${ADMIN_PHONE}&text=${text}`;
+        }
+    </script>
+</body>
+</html>
